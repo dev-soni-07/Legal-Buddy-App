@@ -5,7 +5,7 @@ import React from 'react'
 function teamPage() {
   return (
     <Layout>
-        <Team />
+      <Team />
     </Layout>
   )
 }

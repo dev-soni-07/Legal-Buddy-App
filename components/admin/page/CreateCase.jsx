@@ -136,7 +136,7 @@ function CreateCase() {
                 </ul>
                 <div className="w-full">
                     <Header heading="Create Case" detail="Add client case and its details." image="/newproject.png" />
-                    <CaseForm {...{ handleOnSubmit, isLoading, isSuccess, setIsSuccess, values, setValues, caseTypeList, lawyer, setLawyer  }} />
+                    <CaseForm {...{ handleOnSubmit, isLoading, isSuccess, setIsSuccess, values, setValues, caseTypeList, lawyer, setLawyer }} />
                 </div>
             </main>
 

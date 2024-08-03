@@ -35,7 +35,7 @@ function AllCases() {
             setCategoriesCase(cases)
         }
     }
-    
+
     console.log(cases)
     return (
         <main className='px-4 pt-6 flex'>

@@ -5,7 +5,7 @@ import React from 'react'
 function casesPage() {
   return (
     <Layout>
-        <AllCases />
+      <AllCases />
     </Layout>
   )
 }

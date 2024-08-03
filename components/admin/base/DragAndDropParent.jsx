@@ -7,9 +7,9 @@ import { DragDropContext, Droppable } from 'react-beautiful-dnd'
 function DragAndDropParent({ children, docName, items, setItems, divClasses }) {
     const [data, setData] = useState(items)
     useEffect(() => {
-      if (items) setData(items)
+        if (items) setData(items)
     }, [items])
-    
+
     const { setAlert, setLoading } = useStateContext()
     const update = async (index, id) => {
         setLoading(true);

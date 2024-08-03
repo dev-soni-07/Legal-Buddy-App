@@ -5,7 +5,7 @@ import React from 'react'
 function clientPage() {
   return (
     <Layout className='bg-slate-800'>
-        <Clients />
+      <Clients />
     </Layout>
   )
 }

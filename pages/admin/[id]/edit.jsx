@@ -5,7 +5,7 @@ import React from 'react'
 function editPage() {
   return (
     <Layout>
-        <EditCase />
+      <EditCase />
     </Layout>
   )
 }

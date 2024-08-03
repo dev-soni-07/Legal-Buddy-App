@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-export default function PrimaryButton({ text, color, isLoading, isSuccess, setIsSuccess, isDisable=false }) {
+export default function PrimaryButton({ text, color, isLoading, isSuccess, setIsSuccess, isDisable = false }) {
     useEffect(() => {
         if (isSuccess === true) {
             const timer = setTimeout(() => {
@@ -22,7 +22,7 @@ export default function PrimaryButton({ text, color, isLoading, isSuccess, setIs
                     <span className="sr-only">Loading...</span>
                 </div>
             )}
-            {isSuccess && (<div style={{visibility: isSuccess ? "visible" : "hidden"}} className="sm:w-8 sm:h-8 h-5 w-5 rounded-full flex justify-center items-center border-2 border-green-500 transition-[visibility]">
+            {isSuccess && (<div style={{ visibility: isSuccess ? "visible" : "hidden" }} className="sm:w-8 sm:h-8 h-5 w-5 rounded-full flex justify-center items-center border-2 border-green-500 transition-[visibility]">
                 <svg style={{ animation: isSuccess ? "tick 0.5s ease-in-out forwards" : "" }} className="text-green-500 w-2/3 h-2/3 stroke-current" viewBox="0 0 24 24">
                     <path fill="none" strokeWidth={4} d="M1.73,12.91 8.1,19.28 22.79,4.59" />
                 </svg>

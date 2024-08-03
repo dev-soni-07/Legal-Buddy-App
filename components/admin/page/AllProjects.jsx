@@ -32,7 +32,7 @@ function AllProjects() {
                                 <Draggable key={project.id} draggableId={project.id} index={i} className="">
                                     {(provided, snapshot) => (
                                         <li {...provided.draggableProps}
-                                        ref={provided.innerRef} className='relative max-h-fit h-max hoverTag'>
+                                            ref={provided.innerRef} className='relative max-h-fit h-max hoverTag'>
                                             <span {...provided.dragHandleProps} className='absolute bg-gray-600 hover:bg-gray-500 cursor-grab right-2 dragButton p-1 h-full rounded-lg rounded-l-none flex justify-center items-center text-gray-200 w-7 transition-[right]' data-drag={snapshot.isDragging}>
                                                 <svg xmlns="http://www.w3.org/2000/svg" className='w-5 h-5 stroke-current' viewBox="0 0 16 16" version="1.1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
                                                     <circle cy="2.5" cx="5.5" r=".75" />

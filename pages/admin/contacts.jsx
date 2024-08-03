@@ -5,7 +5,7 @@ import React from 'react'
 function contactsPage() {
   return (
     <Layout>
-        <Contacts />
+      <Contacts />
     </Layout>
   )
 }

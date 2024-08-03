@@ -11,7 +11,7 @@ async function getDocumentCount(docName) {
     const q = query(collection(db, docName));
     const snapshot = await getCountFromServer(q);
     if (snapshot.data()) {
-        return snapshot.data().count;
+      return snapshot.data().count;
     }
   } catch (error) {
     throw new Error(error);

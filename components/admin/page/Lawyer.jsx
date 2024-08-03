@@ -86,7 +86,7 @@ function Lawyer() {
     }
     setIsLoading(true)
     try {
-      const data = {...values}
+      const data = { ...values }
       let res
       if (dataFound) {
         delete data.id
@@ -123,10 +123,10 @@ function Lawyer() {
       setLoading(true)
       console.log(currentUser.uid)
       const documents = await getDocuments(DOCNAME, currentUser?.uid);
-      
+
       console.log(documents)
       documents.length !== 0 && setDataFound(true)
-      documents.length  !== 0 && setValues(documents[0])
+      documents.length !== 0 && setValues(documents[0])
       setLoading(false)
     }
     fetchDocuments()
@@ -226,7 +226,7 @@ function Lawyer() {
             <PrimaryInput {...{ values, setValues, placeholder: "Country", name: "country" }} />
           </InputSection>
           <InputSection id="bio" title="Your Category" desc="Write your category.">
-            <SelectInput {...{values, setValues, placeholder: "---Select Lawyer category---", list: lawyerCategory, name: "category"}} />
+            <SelectInput {...{ values, setValues, placeholder: "---Select Lawyer category---", list: lawyerCategory, name: "category" }} />
             <PrimaryInput {...{ values, setValues, placeholder: "Registration No.", name: "registrationNo", isRequired: true, maxLen: 120 }} />
             <PrimaryInput {...{ values, setValues, placeholder: "Associated Name", name: "associatedName", isRequired: true, maxLen: 120 }} />
             <Textarea {...{ values, setValues, placeholder: "Description...", name: "desc", maxLen: 300 }} />

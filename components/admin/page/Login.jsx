@@ -12,8 +12,8 @@ export default function Login() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const { setAlert } = useStateContext()
-  const {push} = useRouter()
-  
+  const { push } = useRouter()
+
   async function handleOnClick(e) {
     e.preventDefault()
     setIsLoading(true)

@@ -4,7 +4,7 @@ import React from 'react'
 function LoginPage() {
   return (
     <div className='bg-slate-800'>
-        <Login />
+      <Login />
     </div>
   )
 }

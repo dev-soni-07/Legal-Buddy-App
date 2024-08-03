@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Loader({bgFull}) {
+export default function Loader({ bgFull }) {
     const bgOpacity = bgFull ? "bg-opacity-100" : "bg-opacity-70"
     return (
         <div className={`${bgOpacity} fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center flex-col gap-8 bg-black z-50`}>

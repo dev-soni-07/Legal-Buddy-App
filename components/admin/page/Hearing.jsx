@@ -12,6 +12,7 @@ import Modal from '../base/Modal'
 import PrimaryButton from '../base/PrimaryButton'
 import PrimaryInput from '../base/PrimaryInput'
 import Textarea from '../base/Textarea'
+import hearingImg from '@/public/hearings.png'
 
 function Hearing() {
     const DOCNAME = "hearing"
@@ -106,7 +107,7 @@ function Hearing() {
     return (
         <main className='px-4 py-6 flex min-h-screen'>
             <div className="w-full">
-                <Header heading="Hearings" detail="Client hearings and details with hearings invoice." image="/hearings.png" />
+                <Header heading="Hearings" detail="Client hearings and details with hearings invoice." image={hearingImg} />
                 <Modal {...{ isOpen, setIsOpen, size: "md", heading: `${isOpen.type} Hearing` }}>
                     <form className="flex flex-col justify-center w-full" onSubmit={handleOnSubmit}>
                         <div className="flex space-x-4">

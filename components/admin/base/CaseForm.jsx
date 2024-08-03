@@ -350,7 +350,7 @@ function CaseForm({ handleOnSubmit, isLoading, isSuccess, setIsSuccess, values, 
             </InputSection>
             <InputSection id="caseLawyer" title="Client Lawyer">
                 <SelectInput {...{ setValues, values, name: "lawyer", placeholder: "---Select Lawyer---", list: lawyer }} />
-                {values.lawyer && <span>Heiring Cost of lawyer: 
+                {values.lawyer && <span>Heiring Cost of lawyer:
                     {values.lawyer && lawyer ? lawyer.filter(item => item.value === values.lawyer)[0]?.perHeiringCost : 0}
                 </span>}
             </InputSection>
@@ -378,9 +378,9 @@ function CaseForm({ handleOnSubmit, isLoading, isSuccess, setIsSuccess, values, 
 
             <section className='pt-5 pb-8 w-full flex justify-between'>
                 <span>Total Cost: {values.caseType ? caseTypeList.filter(item => item.value === values.caseType)[0].cost : 0 + values.lawyer ? lawyer.filter(item => item.value === values.lawyer)[0]?.perHeiringCost : 0}</span>
-                <PrimaryButton {...{ text: text || "Create Case", isLoading, isSuccess, setIsSuccess }} 
+                <PrimaryButton {...{ text: text || "Create Case", isLoading, isSuccess, setIsSuccess }}
                 />
-                
+
             </section>
         </form>
     )
