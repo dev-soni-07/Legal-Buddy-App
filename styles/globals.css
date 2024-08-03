@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    scroll-behavior: smooth;
+}
+
+@keyframes tick {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.green {
+    @apply bg-slate-500 text-slate-700
+}
+
+.hoverTag:hover>.dragButton,
+.dragButton[data-drag="true"] {
+    right: -1.5rem;
+}
+
+.skillTextShadow {
+    color: transparent;
+    background: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.normalTextShadow {
+    text-shadow: 3px 3px 3px #000;
+}
+
+.projectDivShadow {
+    box-shadow: 3px 3px 1px 1px #000;
+}
+
+.gridRepeatProject {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    justify-items: center;
+}
+
+@media (min-width:330px) {
+    .gridRepeatProject {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (min-width:640px) {
+    .gridRepeatProject {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+}
+
+@media (min-width:1280px) {
+    .gridRepeatProject {
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    }
+}
