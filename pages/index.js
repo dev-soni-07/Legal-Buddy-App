@@ -1,3 +1,12 @@
+export async function getServerSideProps(context) {
+  return {
+    redirect: {
+      destination: '/admin',
+      permanent: false,
+    },
+  };
+}
+
 export default function Home() {
-  return <div className="flex justify-center items-center h-screen"></div>;
+  return null;
 }
