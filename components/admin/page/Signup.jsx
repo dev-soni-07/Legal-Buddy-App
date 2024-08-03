@@ -41,7 +41,10 @@ function Signup() {
                 <input type="password" name="confirmPassword" placeholder='Confirm Password' required autoComplete='true' value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} className='px-4 py-3 bg-gray-200 rounded placeholder:text-gray-500 border border-gray-200 outline-none hover:bg-gray-100 hover:border-gray-400 focus:bg-gray-100 focus:border-gray-400 shadow-lg shadow-slate-900/50' />
                 <PrimaryButton {...{ text: "Signup", isLoading, isSuccess, setIsSuccess }} />
             </form>
-            <Link href='/admin/login' className='pt-3 text-blue-300 pl-4 cursor-pointer inline'>Already have account?</Link>
+            <div className='flex flex-row pt-4'>
+                <p className='text-white pl-4 inline'>Already have account?</p>
+                <Link href='/admin/login' className='text-blue-300 pl-2 cursor-pointer inline'>Login</Link>
+            </div>
 
         </main>
     )

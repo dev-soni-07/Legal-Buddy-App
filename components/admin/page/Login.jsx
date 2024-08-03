@@ -36,8 +36,10 @@ export default function Login() {
         <input type="password" name="password" placeholder='Password' required autoComplete='true' value={password} onChange={e => setPassword(e.target.value)} className='px-4 py-3 bg-gray-200 rounded placeholder:text-gray-500 border border-gray-200 outline-none hover:bg-gray-100 hover:border-gray-400 focus:bg-gray-100 focus:border-gray-400 shadow-lg shadow-slate-900/50' />
         <PrimaryButton {...{ text: "login", isLoading, isSuccess, setIsSuccess }} />
       </form>
-      <Link href='/admin/signup' className='pt-3 text-blue-300 pl-4 cursor-pointer inline'>Do not have account?</Link>
-      <span className='pt-3 text-gray-300 pl-4 cursor-pointer inline'>Forgot password?</span>
+      <div className='flex flex-row pt-4'>
+        <p className='text-white pl-4 inline'>Do not have account?</p>
+        <Link href='/admin/signup' className='text-blue-300 pl-2 cursor-pointer inline'>Signup</Link>
+      </div>
     </main>
   )
 }
